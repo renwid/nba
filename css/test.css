@@ -1,0 +1,107 @@
+.colorOverlay{
+    background:rgba(0,50, 190, 0.5), rgba(0,50, 170, 0.5), rgba(10,70, 180, 0.5);
+}
+#video-background {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: -4;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: 0 !important;
+  background-size: cover;
+  transition: 0.4s ease-out;
+}
+
+.headerText {
+  position: absolute;
+  top: 1%;
+  width: 100%;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: #fff;
+  font-family:  Arial, Helvetica, sans-serif;
+  text-shadow: 1px 1px 1px grey, 1px 1px 4px grey;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+html{
+  overflow: hidden;
+
+}
+
+form{
+    width: 450px;
+    margin: 9em auto;
+
+}
+input{
+    display: block;
+    padding: 3px 16px;
+    font-size: 1.4em;
+    margin: 20px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+    background-color: white;
+
+}
+
+/* validation styles */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,300,600,700,800);
+
+input.valid{
+  border-color:green;
+}
+
+input.invalid{
+  border-color: red;
+}
+
+input + p{
+  font-family:  Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 10px;
+  color: darkred;
+  opacity: 0;
+  height: 12;
+}
+
+input.invalid + p{
+  opacity: 1;
+  margin-top: 10px;
+  margin-bottom: 30px;
+
+}
+
+p{
+  margin-top: 5em;
+}
+
+input.valid {
+  background-color: white;
+}
+
+input.invalid {
+  background-color: white;
+}
+
+form [type=submit] {
+  display: block;
+}
+
+form.invalid [type=submit] {
+  display: none;
+}
+
+#registration{
+  width: 300px;
+  
+}

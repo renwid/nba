@@ -1,0 +1,486 @@
+/* the styles for the html elements */
+html {
+    /* background-color: rgb(192, 192, 192); */
+    /* background-image: url("../images/img1.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 95.8em 60em;
+    background-position: 5px -6em;
+
+}
+
+/*control f5 if css not working*/
+#main{
+  background-color: black;
+}
+header {
+    margin: 0;
+    /* border-bottom: 2px solid black; */
+}
+
+header h1 {
+    margin: 0;
+    padding: .5em 0;
+    color: #3D3D3D;  /* almost black*/
+    margin-left: 12em;
+}
+
+
+hr.style11 {
+	height: 8px;
+	background: url(http://ibrahimjabbari.com/english/images/hr-11.png) repeat-x 0 0;
+  border: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 760px;
+    margin: 0 auto;
+    padding: 0 2em;
+    background-color: transparent;
+    margin-top: 15.5em;
+    margin-left: 4em;
+    position: fixed;
+    text-decoration: none;
+}
+main {
+    margin: 0;
+}
+aside {
+    float: left;
+    width: 150px;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+section {
+    float: left;
+    width: 500px;
+    padding-bottom: 1.5em;
+}
+footer {
+    clear: both;
+    margin-top: 1em;
+    border-top: 2px solid black;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .5em;
+}
+h1, h2 {
+    color: rgb(208, 133, 4);
+}
+ul {
+    margin: 0 0 1em 0;
+    padding: 0 0 0 2.5em;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: rgb(41, 64, 124);
+    font-weight: bold;
+}
+a:hover {
+    color: rgb(208, 133, 4);
+}
+table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 14px;
+	line-height: 24px;
+	margin: 100px auto;
+	width: 540px;
+  margin-top: 1em;
+  margin-left: 0px;
+
+}
+
+th {
+    border: 1px dashed black;
+    padding: .2em .5em .2em .5em;
+    vertical-align: top;
+    text-align: center;
+}
+td {
+  border: 1px dashed black;
+  padding: .2em .5em .2em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+/* the styles for classes */
+.right {
+    text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;
+}
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+
+
+#editButton {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#editButton:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#editButton{
+  border: dashed 1.5px #41403E;
+}
+
+#editButton{
+  margin-top: -7.5px;
+  margin-left: 4px;
+}
+
+/* Delete Button */
+#deleteButton {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 2rem ;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#deleteButton:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#deleteButton{
+  border: dashed 1.5px #41403E;
+}
+
+#deleteButton{
+  margin-top: -4px;
+  margin-left: 4px;
+}
+
+/* End */
+#editButtonForm {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#editButtonForm:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#editButtonForm{
+  border: dashed 1.5px #41403E;
+}
+
+#editButtonForm{
+  margin-top: 13px;
+  margin-left: 0;
+}
+#indexFooter{
+  margin-top: 28em;
+  position: fixed;
+  width: 50em;
+}
+
+#addProduct1
+{
+  margin-top: -2em;
+  padding-bottom: 10px;
+}
+
+#addProduct2
+{
+  margin-bottom: 5em;
+}
+/********************************************************************
+* Additional styles for the Product Manager application
+********************************************************************/
+#add_product_form {
+    margin: 4em 0 5em;
+}
+#add_product_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    float: left;
+}
+#add_product_form input {
+    float: left;
+}
+#add_product_form input[text] {
+    width: 15em;
+}
+
+#add_product_formFooter{
+  margin-top: 5em;
+  position: fixed;
+  width: 50em;
+}
+
+#addProducth1{
+  margin-top: -2em;
+}
+
+/********************************************************************
+* Additional styles for the Product Manager application
+********************************************************************/
+#edit_product_form {
+    margin: .5em 0 1em;
+}
+#edit_product_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: 0.7em;
+    float: left;
+}
+#edit_product_form input {
+    float: left;
+}
+#edit_product_form input[text] {
+    width: 15em;
+}
+
+.editProductFooter{
+  margin-top: 14em;
+}
+
+#categoryListTable{
+  width: 18em;
+}
+#deleteCategoryList{
+  margin-left: 20px;
+}
+
+#deleteCategoryList {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#deleteCategoryList:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#deleteCategoryList{
+  border: dashed 1.5px #41403E;
+}
+
+#add_category_button {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#add_category_button:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#add_category_button{
+  border: dashed 1.5px #41403E;
+}
+
+#addCategoryh1{
+  margin-top: -2.4em;
+}
+
+#add_category_h2{
+  margin-top: -5em;
+}
+
+#categoryListFooter
+{
+  margin-top: 6em;
+  position: fixed;
+  width: 50em;
+}
+
+#indexManagerh1{
+  margin-top: -2em;
+}
+
+/* Add Product Button in Add product page */
+#addProduct3 {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#addProduct3:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#addProduct3{
+  border: dashed 1.5px #41403E;
+}
+
+#addProduct3 {
+  align-self: center;
+  background: transparent;
+  padding: 3px 3px;
+  margin: 3 1rem;
+  transition: all .5s ease;
+  color: #41403E;
+  font-size: 14px;
+  letter-spacing: 1px;
+  outline: none;
+  box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+
+}
+#addProduct3:hover {
+  box-shadow: 2px 8px 4px -6px rgba(0, 0, 0, 0.3);
+}
+
+#addProduct3{
+  border: dashed 1.5px #41403E;
+}
+/* Category List CSS */
+.categoryListh1
+{
+  color:black;
+  margin-top: -2.5em;
+  position: fixed;
+}
+
+.categoryListFooter
+{
+  margin-top: 8em;
+}
+
+h1{
+  color: black;
+}
+
+h2{
+  color: black;
+}
+
+/* Arrow Animation for Categories */
+
+.ulIndex {
+  margin: 15px auto 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 600px;
+
+
+
+}
+
+
+a {
+  color: black;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: -10px 10px;
+  position: relative;
+
+
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 2;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
+@media screen and (max-height: 300px) {
+	ul {
+		margin-top: 40px;
+    color:
+	}
+}
+
+#table{
+  margin-left: 28%;
+}
+
+#teamNameh2{
+  margin-left: 7.5em;
+}

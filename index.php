@@ -34,7 +34,7 @@ $queryProducts = 'SELECT * FROM products
 $statement3 = $db->prepare($queryProducts);
 $statement3->bindValue(':team_id', $team_id);
 $statement3->execute();
-$products = $statement3->fetchAll();
+$players = $statement3->fetchAll();
 $statement3->closeCursor();
 
  ?>
@@ -78,27 +78,27 @@ $statement3->closeCursor();
                 <th>Position</th>
                 <th>&nbsp;</th>
             </tr>
-            <?php foreach ($products as $product) : ?>
+            <?php foreach ($players as $player) : ?>
             <tr>
-                <td><?php echo $product['productCode']; ?></td>
-                <td><?php echo $product['productName']; ?></td>
-                <td><?php echo $product['listPrice']; ?></td>
+                <td><?php echo $player['productCode']; ?></td>
+                <td><?php echo $player['productName']; ?></td>
+                <td><?php echo $player['listPrice']; ?></td>
 
-                <!-- Delete product -->
-                <td><form action="delete_product.php" method="post">
+                <!-- Delete player -->
+                <td><form action="delete_player.php" method="post">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
+                           value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"
-                           value="<?php echo $product['categoryID']; ?>">
+                           value="<?php echo $player['categoryID']; ?>">
                     <input id="editButton" type="submit" value="Delete">
                 </form></td>
 
                 <!-- Update product -->
                 <td><form action="edit_player_form.php" method="post" id="edit_product_form">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $product['productID']; ?>">
+                           value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"
-                           value="<?php echo $product['categoryID']; ?>">
+                           value="<?php echo $player['categoryID']; ?>">
                     <input id="editButton" type="submit" value="Edit">
                 </form></td>
 
