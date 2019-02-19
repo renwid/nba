@@ -17,7 +17,7 @@ $team = $statement1->fetch();
 $team_name = $team['categoryName'];
 $statement1->closeCursor();
 
-// Get all categories
+// Get all team
 $queryAllCategories = 'SELECT * FROM categories
                            ORDER BY categoryID';
 $statement2 = $db->prepare($queryAllCategories);
@@ -41,7 +41,7 @@ $statement3->closeCursor();
 <html>
 <!-- the head section -->
 <head>
-    <title>The Goods Dept</title>
+    <title>NBA</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" /> <!-- Access to sub folder -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/jquery.js"></script>
@@ -72,7 +72,7 @@ $statement3->closeCursor();
           </ul>
         </nav>
     </aside>
-<!-- display a table of products -->
+<!-- display a table of players -->
         <h2 id="categoryName"><?php echo $team_name; ?></h2>
         <div id = "tablePosition">
 
