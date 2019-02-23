@@ -3,15 +3,15 @@
 
 <!-- the head section -->
 <head>
-    <title>The Goods Dept</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>NBA</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
 </head>
 
 <!-- the body section -->
 <body>
-    <header><h1>The Goods Dept</h1></header>
+    <header><h1>NBA</h1></header>
 
     <main>
         <h2 class="top">Error</h2>
@@ -19,7 +19,7 @@
     </main>
 
     <footer>
-        <p>&copy; <?php echo date("Y"); ?> The Goods Dept</p>
+        <p>&copy; <?php echo date("Y"); ?> NBA</p>
     </footer>
 </body>
 </html>

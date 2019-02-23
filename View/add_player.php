@@ -9,12 +9,12 @@ $price = filter_input(INPUT_POST, 'price');
 // Validate inputs
 if ($team_id == null || $team_id == false ||
         $code == null || $name == null || $price == null || $price == null) {
-    $error = "Invalid product data. Check all fields and try again.";
-    include('./Error/error.php');
+    $error = "Invalid player data. Check all fields and try again.";
+    include('../Error/error.php');
 } else {
-    require_once('./Model/database.php');
+    require_once('../Model/database.php');
 
-    // Add the product to the database
+    // Add the player to the database
     $query = 'INSERT INTO products
                  (categoryID, productCode, productName, listPrice)
               VALUES
@@ -28,6 +28,6 @@ if ($team_id == null || $team_id == false ||
     $statement->closeCursor();
 
     // Display the Product List page
-    include('./index.php');
+    include('../index.php');
 }
 ?>

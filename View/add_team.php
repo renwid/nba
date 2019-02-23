@@ -5,9 +5,9 @@ $name = filter_input(INPUT_POST, 'name');
 // Validate inputs
 if ($name == null) {
     $error = "Invalid team data. Check all fields and try again.";
-    include('error.php');
+    include('../Error/error.php');
 } else {
-    require_once('database.php');
+    require_once('../Model/database.php');
 
     // Add the product to the database
     $query = 'INSERT INTO categories (categoryName)

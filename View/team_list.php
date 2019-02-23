@@ -1,5 +1,5 @@
 <?php
-    require_once('database.php');
+    require_once('../Model/database.php');
 
     // Get all categories
     $query = 'SELECT * FROM categories
@@ -15,7 +15,7 @@
 <!-- the head section -->
 <head>
     <title>NBA</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
 </head>
@@ -55,7 +55,7 @@
         <input id="add_category_button" type="submit" value="Add">
     </form>
     <br>
-    <p><a href="index.php">View Team List</a></p>
+    <p><a href="../index.php">View Team List</a></p>
 
     </main>
     <footer id="categoryListFooter">

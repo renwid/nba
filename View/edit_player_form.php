@@ -2,7 +2,7 @@
 $product_id = $_POST['product_id'];
 
 //Get the categories for the pull down menu
-require_once('database.php');
+require_once('../Model/database.php');
 $query = "SELECT*FROM categories ORDER BY categoryID";
 $categories = $db->query($query);
 
@@ -24,7 +24,7 @@ $team_id = $edit_product['categoryID'];
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title></title>
-     <link rel="stylesheet" type="text/css" href="css/index.css" />
+     <link rel="stylesheet" type="text/css" href="/nba/css/index.css">
      <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
    </head>
@@ -53,7 +53,7 @@ $team_id = $edit_product['categoryID'];
            <?php endforeach; ?>
            </select><br>
 
-         <label>Code:</label>
+         <label>Jersey:</label>
          <input name="code" type="input" value="<?php echo $code; ?>"><br>
 
 
@@ -61,7 +61,7 @@ $team_id = $edit_product['categoryID'];
          <input name="name" type="input" value="<?php echo $name; ?>"><br>
 
 
-         <label>List Price:</label>
+         <label>Position:</label>
          <input name="price" type="input" value="<?php echo $price; ?>"><br>
 
 
@@ -70,7 +70,7 @@ $team_id = $edit_product['categoryID'];
  </form>
 
      <footer class="editProductFooter">
-         <p>&copy; <?php echo date("Y"); ?> My Guitar Shop, Inc.</p>
+         <p>&copy; <?php echo date("Y"); ?> NBA</p>
      </footer>
 
    </body>

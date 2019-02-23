@@ -1,5 +1,5 @@
 <?php
-require('./Model/database.php');
+require('../Model/database.php');
 $query = 'SELECT *
           FROM categories
           ORDER BY categoryID';
@@ -14,7 +14,7 @@ $statement->closeCursor();
 <!-- the head section -->
 <head>
     <title>NBA</title>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 </head>
 
@@ -24,7 +24,7 @@ $statement->closeCursor();
 
     <main>
         <h1></h1>
-        <form action="./add_player.php" method="post"
+        <form action="add_player.php" method="post"
               id="add_product_form">
 
             <label>Team Name:</label>
@@ -48,7 +48,7 @@ $statement->closeCursor();
             <label>&nbsp;</label>
             <input id="addProduct3" type="submit" value="Add Player"><br>
         </form>
-        <p><a href="./index.php">View Team List</a></p>
+        <p><a href="../index.php">View Team List</a></p>
     </main>
 
     <footer id="add_product_formFooter">

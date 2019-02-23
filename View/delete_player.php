@@ -1,5 +1,5 @@
 <?php
-require_once('database.php');
+require_once('../Model/database.php');
 
 // Get IDs
 $player_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
@@ -16,4 +16,4 @@ if ($player_id != false && $team_id != false) {
 }
 
 // Display the Product List page
-include('index.php');
+include('../index.php');

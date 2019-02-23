@@ -1,5 +1,5 @@
 <?php
-require_once('/Model/database.php'); //calls the database.php file to validate the user
+require_once('Model/database.php'); //calls the database.php file to validate the user
 
 //Get Category ID
 if (!isset($team_id)) {
@@ -44,7 +44,7 @@ $statement3->closeCursor();
 
 <!-- the head section -->
 <head>
-    <title>The Goods Dept</title>
+    <title>NBA</title>
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 </head>
@@ -85,7 +85,7 @@ $statement3->closeCursor();
                 <td><?php echo $player['listPrice']; ?></td>
 
                 <!-- Delete player -->
-                <td><form action="/View/delete_player.php" method="post">
+                <td><form action="View/delete_player.php" method="post">
                     <input type="hidden" name="product_id"
                            value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"
@@ -94,7 +94,7 @@ $statement3->closeCursor();
                 </form></td>
 
                 <!-- Update product -->
-                <td><form action="/View/edit_player_form.php" method="post" id="edit_product_form">
+                <td><form action="View/edit_player_form.php" method="post" id="edit_product_form">
                     <input type="hidden" name="product_id"
                            value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"

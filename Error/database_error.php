@@ -3,7 +3,7 @@
     <!-- the head section -->
     <head>
         <title>The Goods Dept</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
     </head>
 
     <!-- the body section -->

@@ -5,9 +5,9 @@ $team_id = filter_input(INPUT_POST, 'team_id', FILTER_VALIDATE_INT);
 // Validate inputs
 if ($team_id == null || $team_id == false) {
     $error = "Invalid category ID.";
-    include('error.php');
+    include('../Error/error.php');
 } else {
-    require_once('database.php');
+    require_once('../Model/database.php');
 
     // Add the product to the database
     $query = 'DELETE FROM categories
