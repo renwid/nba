@@ -27,6 +27,7 @@ $statement->closeCursor();
         <form action="add_player.php" method="post"
               id="add_product_form">
 
+
             <label>Team Name:</label>
             <select name="team_id">
             <?php foreach ($categories as $team) : ?>

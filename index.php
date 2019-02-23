@@ -1,5 +1,5 @@
 <?php
-require_once('database.php'); //calls the database.php file to validate the user
+require_once('/Model/database.php'); //calls the database.php file to validate the user
 
 //Get Category ID
 if (!isset($team_id)) {
@@ -85,7 +85,7 @@ $statement3->closeCursor();
                 <td><?php echo $player['listPrice']; ?></td>
 
                 <!-- Delete player -->
-                <td><form action="delete_player.php" method="post">
+                <td><form action="/View/delete_player.php" method="post">
                     <input type="hidden" name="product_id"
                            value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"
@@ -94,7 +94,7 @@ $statement3->closeCursor();
                 </form></td>
 
                 <!-- Update product -->
-                <td><form action="edit_player_form.php" method="post" id="edit_product_form">
+                <td><form action="/View/edit_player_form.php" method="post" id="edit_product_form">
                     <input type="hidden" name="product_id"
                            value="<?php echo $player['productID']; ?>">
                     <input type="hidden" name="team_id"
@@ -106,8 +106,8 @@ $statement3->closeCursor();
             <?php endforeach; ?>
         </table>
 
-          <p id="addProduct1"><a href="add_player_form.php">Add Players</a></p>
-          <p id="addProduct2"><a href="team_list.php">Add Team</a></p>
+          <p id="addProduct1"><a href="View/add_player_form.php">Add Players</a></p>
+          <p id="addProduct2"><a href="View/team_list.php">Add Team</a></p>
 
     </section>
 </main>

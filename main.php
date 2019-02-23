@@ -1,5 +1,5 @@
 <?php
-require_once('database.php');
+require_once('Model/database.php');
 
 // Get team ID
 $team_id= filter_input(INPUT_GET, 'team_id', FILTER_VALIDATE_INT);
