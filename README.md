@@ -15,4 +15,4 @@
 ***INSERT ANOTHER GRAPHIC HERE***
 
 
-[![INSERT YOUR GRAPHIC HERE](https://imgur.com/a/H1mfDq3)]()
+[![NBA](https://www.github.com/renwid/nba/images/standing.png)]()
