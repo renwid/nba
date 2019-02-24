@@ -36,7 +36,7 @@ $statement->closeCursor();
             <?php endforeach; ?>
             </select><br>
 
-            <label id="label1">Jersey:</label>
+            <label id="label1">#:</label>
             <input type="text" name="code"><br>
 
             <label id="label2">Name:</label>

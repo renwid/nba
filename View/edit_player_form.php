@@ -1,7 +1,7 @@
 <?php
 $product_id = $_POST['product_id'];
 
-//Get the categories for the pull down menu
+//Get the teams for the pull down menu
 require_once('../Model/database.php');
 $query = "SELECT*FROM categories ORDER BY categoryID";
 $categories = $db->query($query);
@@ -30,10 +30,10 @@ $team_id = $edit_product['categoryID'];
    </head>
    <body>
 
-         <h1>Edit Product</h1>
+         <h1>Edit Player</h1>
 
-         Product ID: <?php echo $product_id; ?><br />
-         Code: <?php echo $code; ?>
+         Player ID: <?php echo $product_id; ?><br />
+         #: <?php echo $code; ?>
 
 
          <form action="edit_player.php" method="post"
@@ -53,7 +53,7 @@ $team_id = $edit_product['categoryID'];
            <?php endforeach; ?>
            </select><br>
 
-         <label>Jersey:</label>
+         <label>#:</label>
          <input name="code" type="input" value="<?php echo $code; ?>"><br>
 
 

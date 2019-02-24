@@ -1,5 +1,5 @@
 <?php
-// Get the product data
+// Get the player data
 $player_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
 $team_id = filter_input(INPUT_POST, 'team_id', FILTER_VALIDATE_INT);
 $code = filter_input(INPUT_POST, 'code');
@@ -27,7 +27,7 @@ if ($team_id == null || $team_id == false ||
     $statement->execute();
     $statement->closeCursor();
 
-    // Display the Product List page
+    // Display the Player List page
     include('../index.php');
 }
 ?>

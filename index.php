@@ -1,7 +1,7 @@
 <?php
 require_once('Model/database.php'); //calls the database.php file to validate the user
 
-//Get Category ID
+//Get Team ID
 if (!isset($team_id)) {
     $team_id = filter_input(INPUT_GET, 'team_id', FILTER_VALIDATE_INT);
     if ($team_id == NULL || $team_id == FALSE) {
@@ -9,7 +9,7 @@ if (!isset($team_id)) {
     }
 }
 
-//Get name for selected category
+//Get name for selected team
 $queryTeam = 'SELECT * FROM categories
                   WHERE categoryID = :team_id';
 $statement1 = $db->prepare($queryTeam);
@@ -19,7 +19,7 @@ $team = $statement1->fetch();
 $team_name = $team['categoryName'];
 $statement1->closeCursor();
 
-// Get all categories
+// Get all teams
 $query = 'SELECT * FROM categories
                        ORDER BY categoryID';
 $statement = $db->prepare($query);
@@ -27,7 +27,7 @@ $statement->execute();
 $categories = $statement->fetchAll();
 $statement->closeCursor();
 
-// Get products for selected category
+// Get products for selected team
 $queryProducts = 'SELECT * FROM products
                   WHERE categoryID = :team_id
                   ORDER BY productID';
@@ -69,7 +69,7 @@ $statement3->closeCursor();
         </nav>
     </aside>
     <section>
-        <!-- display a table of products -->
+        <!-- display a table of players -->
         <h2 id="categoryNameh2"><?php echo $team_name; ?></h2>
         <table id="table">
             <tr>
@@ -93,7 +93,7 @@ $statement3->closeCursor();
                     <input id="editButton" type="submit" value="Delete">
                 </form></td>
 
-                <!-- Update product -->
+                <!-- Update player -->
                 <td><form action="View/edit_player_form.php" method="post" id="edit_product_form">
                     <input type="hidden" name="product_id"
                            value="<?php echo $player['productID']; ?>">

@@ -9,7 +9,7 @@ if ($team_id == null || $team_id == false) {
 } else {
     require_once('../Model/database.php');
 
-    // Add the product to the database
+    // Add the player to the database
     $query = 'DELETE FROM categories
               WHERE categoryID = :team_id';
     $statement = $db->prepare($query);
@@ -17,7 +17,7 @@ if ($team_id == null || $team_id == false) {
     $statement->execute();
     $statement->closeCursor();
 
-    // Display the Category List page
+    // Display the Team List page
     include('team_list.php');
 }
 ?>

@@ -9,7 +9,7 @@ if ($name == null) {
 } else {
     require_once('../Model/database.php');
 
-    // Add the product to the database
+    // Add the player to the database
     $query = 'INSERT INTO categories (categoryName)
               VALUES (:team_name)';
     $statement = $db->prepare($query);

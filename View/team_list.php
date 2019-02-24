@@ -1,7 +1,7 @@
 <?php
     require_once('../Model/database.php');
 
-    // Get all categories
+    // Get all teams
     $query = 'SELECT * FROM categories
               ORDER BY categoryID';
     $statement = $db->prepare($query);

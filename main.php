@@ -1,5 +1,5 @@
 <?php
-require_once('database.php');
+require_once('Model/database.php');
 
 // Get team ID
 $team_id= filter_input(INPUT_GET, 'team_id', FILTER_VALIDATE_INT);
@@ -25,7 +25,7 @@ $statement2->execute();
 $categories = $statement2->fetchAll();
 $statement2->closeCursor();
 
-// Get products for selected team
+// Get players for selected team
 $queryPlayers = 'SELECT * FROM products
               WHERE categoryID = :team_id
               ORDER BY productID';
@@ -58,7 +58,7 @@ $statement3->closeCursor();
 
 <main>
     <aside>
-        <!-- display a list of categories -->
+        <!-- display a list of teams -->
         <h2 id="teamh2">Teams</h2>
         <nav>
           <ul class="indexBrands">
