@@ -19,4 +19,4 @@
 
 [![NBA](https://i.imgur.com/sHH8AOf.png)]{:height="1475" width="1270"}
 
-![test image size](https://i.imgur.com/sHH8AOf.png){:height="1475px" width="1270px"}
+<img src="https://i.imgur.com/sHH8AOf.png" alt="Info" title="Test" width="1270" height="1475" />
