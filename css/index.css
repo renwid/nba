@@ -232,14 +232,15 @@ br {
 
 #addProduct1
 {
-  margin-top: -2em;
+  margin-top: -2.5em;
   padding-bottom: 10px;
 }
 
 #addProduct2
 {
-  margin-bottom: 5em;
+  margin-bottom: 1.5em;
 }
+
 /********************************************************************
 * Additional styles for the Product Manager application
 ********************************************************************/
@@ -268,6 +269,8 @@ br {
 #addProducth1{
   margin-top: -2em;
 }
+
+
 
 /********************************************************************
 * Additional styles for the Product Manager application
@@ -483,4 +486,34 @@ a:hover:after {
 
 #teamNameh2{
   margin-left: 7.5em;
+}
+
+#standingListMain
+{
+  margin-left: 70%;
+}
+
+#standingListTable
+{
+  width: 270px;
+
+}
+
+#standingListFooter
+{
+  margin-left: 10em;
+}
+#teamImage{
+  width: 26px;
+  height: 25px;
+}
+
+#aManager
+{
+
+}
+
+#categoryNameh2
+{
+  margin-left: 7.4em;
 }
