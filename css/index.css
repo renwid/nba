@@ -300,8 +300,13 @@ br {
 }
 
 #categoryListTable{
-  width: 22em;
+  width: 28em;
+  margin-top: 1em;
+  margin-bottom: 10em;
 }
+
+
+
 #deleteCategoryList{
   margin-left: 20px;
 }
@@ -340,6 +345,7 @@ br {
   outline: none;
   box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, 0.2);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  margin-left: -4em;
 
 }
 #add_category_button:hover {
@@ -350,12 +356,18 @@ br {
   border: dashed 1.5px #41403E;
 }
 
-#addCategoryh1{
-  margin-top: -2.4em;
-}
 
 #add_category_h2{
-  margin-top: -5em;
+  margin-top: -6em;
+  padding-bottom: 1em;
+}
+
+#add_team_win{
+  padding-left: 15px;
+}
+
+#add_team_loss{
+  padding-left: 15px;
 }
 
 #categoryListFooter
@@ -492,11 +504,6 @@ a:hover:after {
   margin-left: 7.5em;
 }
 
-#standingListMain
-{
-  margin-left: 70%;
-}
-
 #standingListTable
 {
   width: 290px;
@@ -522,18 +529,22 @@ a:hover:after {
   margin-left: 7.4em;
 }
 
-
 /* Sorting Table */
 
 #keywords {
   margin: 0 auto;
-  font-size: 1em;
-  margin-bottom: 3px;
-  width: 28em;
-  margin-left: 0em;
-
+  font-size: 9.2px;
+  margin-bottom: 10em;
+  width: 20em;
+  margin-left: -8em;
 }
 
+
+#standingListMain
+{
+  margin-left: 70%;
+  margin-top: -14%;
+}
 
 #keywords thead {
   cursor: pointer;
@@ -541,7 +552,7 @@ a:hover:after {
 }
 #keywords thead tr th {
   font-weight: bold;
-  padding: 12px 30px;
+  padding: 8px 30px;
   padding-left: 38px;
 }
 #keywords thead tr th span {
@@ -555,10 +566,10 @@ a:hover:after {
 }
 
 #keywords thead tr th.headerSortUp span {
-  background-image: url('../images/up-arrow.png');
+  background-image: url('up-arrow.png');
 }
 #keywords thead tr th.headerSortDown span {
-  background-image: url('../images/down-arrow.png');
+  background-image: url('down-arrow.png');
 }
 
 
@@ -576,6 +587,6 @@ a:hover:after {
 }
 
 #addCategoryh1{
-  margin-top: -5em;
+  margin-top: -7em;
   padding-bottom: 2em;
 }
