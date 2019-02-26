@@ -27,7 +27,7 @@
 <body>
     <main id="standingListMain">
 
-    <!-- <h1 id="addCategoryh1">Team Standings</h1> -->
+    <h1 id="addCategoryh1">2018-19 NBA Standings</h1>
     <table id="keywords">
       <thead>
         <tr>
@@ -49,7 +49,7 @@
             </td>
 
             <td>
-              <img id="teamImage" src="../images/<?php echo $team['imgName']; ?>" style="width:29px">
+              <img id="teamImageStanding" src="../images/<?php echo $team['imgName']; ?>" style="width:29px">
             </td>
 
             <td>
@@ -78,6 +78,9 @@
         </tr>
         <?php endforeach; ?>
     </table>
+
+    <p id="standingh1"><a href="../index.php">Back</a></p>
+
     <br>
 
     </main>
