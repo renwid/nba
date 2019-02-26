@@ -109,7 +109,7 @@ $statement3->closeCursor();
         <p id="addProduct1"><a href="View/add_player_form.php">Add Players</a></p>
         <p id="addProduct2"><a href="View/team_list.php">Add Team</a></p>
         <p id="addProduct4"><a href="main.php">View Main</a></p>
-        <p id=""><a href="standing.php">View Standings</a></p>
+        <p id=""><a href="View/standing.php">View Standings</a></p>
 
     </section>
 </main>
