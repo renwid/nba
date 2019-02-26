@@ -3,7 +3,7 @@
 
     // Get all categories
     $query = 'SELECT * FROM categories
-              ORDER BY categoryID';
+              ORDER BY win DESC ';
     $statement = $db->prepare($query);
     $statement->execute();
     $teams = $statement->fetchAll();
@@ -27,25 +27,53 @@
 <body>
     <main id="standingListMain">
 
-    <h1 id="addCategoryh1">Team Standings</h1>
+    <!-- <h1 id="addCategoryh1">Team Standings</h1> -->
     <table id="keywords">
       <thead>
         <tr>
-          <th><span>Position</span></th>
+          <!-- <th><span>Position</span></th> -->
           <th><span>Team</span></th>
           <th><span>&nbsp;</span></th>
+          <th><span>Win</span></th>
+          <th><span>Loss</span></th>
+          <th><span>Win%</span></th>
+
+
         </tr>
       </thead>
         <?php foreach ($teams as $team) : ?>
         <tr>
-            <td><?php echo $team['categoryID']; ?></td>
+            <!-- <td><?php echo $team['categoryID']; ?></td> -->
             <td>
               <?php echo $team['teamName']; ?>
             </td>
 
-              <td>
-                <img id="teamImage" src="../images/<?php echo $team['imgName']; ?>" style="width:29px">
-              </td>
+            <td>
+              <img id="teamImage" src="../images/<?php echo $team['imgName']; ?>" style="width:29px">
+            </td>
+
+            <td>
+              <?php echo $team['win']; ?>
+            </td>
+
+            <td>
+              <?php echo $team['loss']; ?>
+            </td>
+
+<!-- team win percentage -->
+            <td>
+              <?php
+
+                $total_games = $team['win'] + $team['loss'];
+                $percent = $team['win'] /  $total_games;
+                $percent_friendly = number_format( $percent * 100, 1 ) . '%';
+
+                echo $percent_friendly;
+              ?>
+            </td>
+
+
+
 
         </tr>
         <?php endforeach; ?>

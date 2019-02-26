@@ -2,6 +2,8 @@
 
 // Get the team data
 $name = filter_input(INPUT_POST, 'team_name');
+$win = filter_input(INPUT_POST, 'team_win');
+$loss = filter_input(INPUT_POST, 'team_loss');
 
 // Validate inputs
 if ($name == null) {
@@ -19,6 +21,9 @@ if ($name == null) {
     // This gets all the other information from the form
     $filename = basename( $_FILES['image']['name']);
     $team_name = $_POST['team_name'];
+    $team_win = $_POST['team_win'];
+    $team_loss = $_POST['team_loss'];
+
 
     // Write the file name to the server
     if(move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
@@ -27,7 +32,7 @@ if ($name == null) {
     echo "The file ". basename( $_FILES['image']['name']). " has been uploaded, and your information has been added to the directory";
 
     // Connects to your Database
-    $sql = "INSERT INTO categories (teamName, img, imgName) VALUES ('$team_name', '$filename', '$filename')";
+    $sql = "INSERT INTO categories (teamName, img, imgName, win, loss) VALUES ('$team_name', '$filename', '$filename', $team_win, $team_loss)";
     $conn = new mysqli('localhost', $username, $password, 'nba');
     if ($conn->query($sql) === TRUE) {
 
