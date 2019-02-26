@@ -63,7 +63,7 @@ $team_id = $edit_product['categoryID'];
 
 
          <label>&nbsp;</label>
-         <input id="addProduct3" type="submit" value="Edit Product"/><br>
+         <input id="addProduct3" type="submit" value="Edit Player"/><br>
  </form>
 
      <footer id="add_product_formFooter">
