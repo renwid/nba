@@ -24,20 +24,17 @@ $team_id = $edit_product['categoryID'];
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1">
      <title></title>
-     <link rel="stylesheet" type="text/css" href="/nba/css/index.css">
+     <link rel="stylesheet" type="text/css" href="../css/index.css">
      <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
    </head>
    <body>
 
-         <h1>Edit Product</h1>
-
-         Product ID: <?php echo $product_id; ?><br />
-         Code: <?php echo $jersey; ?>
+     <header><h1 id="addProducth1">Edit Player</h1></header>
 
 
          <form action="edit_player.php" method="post"
-           id="edit_product_form">
+           id="add_product_form">
            <input type="hidden" name="team_id" value="<?php echo $team_id; ?>">
            <input type="hidden" name="code" value="<?php echo $jersey; ?>">
            <input type="hidden" name="name" value="<?php echo $name; ?>">
@@ -53,23 +50,23 @@ $team_id = $edit_product['categoryID'];
            <?php endforeach; ?>
            </select><br>
 
-         <label>Jersey:</label>
+           <label id="label1">Jersey:</label>
          <input name="code" type="input" value="<?php echo $jersey; ?>"><br>
 
 
-         <label>Name:</label>
+         <label id="label2">Name:</label>
          <input name="name" type="input" value="<?php echo $name; ?>"><br>
 
 
-         <label>Position:</label>
+         <label id="label3">Position:</label>
          <input name="position" type="input" value="<?php echo $position; ?>"><br>
 
 
          <label>&nbsp;</label>
-         <input id="editButtonForm" type="submit" value="Edit Product"/><br>
+         <input id="addProduct3" type="submit" value="Edit Product"/><br>
  </form>
 
-     <footer class="editProductFooter">
+     <footer id="add_product_formFooter">
          <p>&copy; <?php echo date("Y"); ?> NBA</p>
      </footer>
 
