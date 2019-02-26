@@ -10,13 +10,6 @@
 
 # NBA
 
-> Test
-
-> Test :basketball:
-
-> Test :smile:
-
-
 [![NBA](https://i.imgur.com/1c3Bgzx.png)](height=1475)
 
 
