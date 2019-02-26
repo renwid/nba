@@ -59,6 +59,10 @@
 ---
 
 ## Features
+
 > Adding **new** player and editing **existing** player
+
 ![GIF](https://i.gyazo.com/e6cb5e59acc322184de98e07189b8c63.gif?_ga=2.264340428.2127822680.1551223246-228063269.1547928545)
+
+![GIF](https://i.gyazo.com/92527c80c4f23ae548580941c5593cb8.gif?_ga=2.193676142.2127822680.1551223246-228063269.1547928545)
 
