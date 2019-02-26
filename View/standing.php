@@ -1,5 +1,5 @@
 <?php
-    require_once('Model/database.php');
+    require_once('../Model/database.php');
 
     // Get all categories
     $query = 'SELECT * FROM categories
@@ -15,10 +15,10 @@
 <!-- the head section -->
 <head>
     <title>NBA</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="shortcut icon" type="image/png" href="../images/favicon.ico"/>
+    <script type="text/javascript" src="../js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.tablesorter.min.js"></script>
 
 </head>
 
@@ -44,7 +44,7 @@
             </td>
 
               <td>
-                <img id="teamImage" src="images/<?php echo $team['imgName']; ?>" style="width:29px">
+                <img id="teamImage" src="../images/<?php echo $team['imgName']; ?>" style="width:29px">
               </td>
 
         </tr>
