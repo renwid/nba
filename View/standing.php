@@ -1,5 +1,5 @@
 <?php
-    require_once('../Model/database.php');
+    require_once('Model/database.php');
 
     // Get all categories
     $query = 'SELECT * FROM categories
@@ -15,8 +15,10 @@
 <!-- the head section -->
 <head>
     <title>NBA</title>
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
 
 </head>
 
@@ -26,12 +28,14 @@
     <main id="standingListMain">
 
     <h1 id="addCategoryh1">Team Standings</h1>
-    <table id="standingListTable">
+    <table id="keywords">
+      <thead>
         <tr>
-            <th>Team</th>
-            <th>&nbsp;</th>
-            <th>&nbsp;</th>
+          <th><span>Position</span></th>
+          <th><span>Team</span></th>
+          <th><span>&nbsp;</span></th>
         </tr>
+      </thead>
         <?php foreach ($teams as $team) : ?>
         <tr>
             <td><?php echo $team['categoryID']; ?></td>
@@ -52,5 +56,11 @@
     <!-- <footer id="standingListFooter">
         <p>&copy; <?php echo date("Y"); ?> NBA</p>
     </footer> -->
+
+    <script type="text/javascript">
+$(function(){
+  $('#keywords').tablesorter();
+});
+</script>
 </body>
 </html>
