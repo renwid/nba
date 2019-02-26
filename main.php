@@ -14,7 +14,7 @@ $statement1 = $db->prepare($queryTeam);
 $statement1->bindValue(':team_id', $team_id);
 $statement1->execute();
 $team = $statement1->fetch();
-$team_name = $team['categoryName'];
+$team_name = $team['teamName'];
 $statement1->closeCursor();
 
 // Get all team
@@ -25,10 +25,10 @@ $statement2->execute();
 $categories = $statement2->fetchAll();
 $statement2->closeCursor();
 
-// Get players for selected team
+// Get products for selected team
 $queryPlayers = 'SELECT * FROM products
               WHERE categoryID = :team_id
-              ORDER BY productID';
+              ORDER BY playerID';
 $statement3 = $db->prepare($queryPlayers);
 $statement3->bindValue(':team_id', $team_id);
 $statement3->execute();
@@ -58,14 +58,14 @@ $statement3->closeCursor();
 
 <main>
     <aside>
-        <!-- display a list of teams -->
+        <!-- display a list of categories -->
         <h2 id="teamh2">Teams</h2>
         <nav>
           <ul class="indexBrands">
             <?php foreach ($categories as $team) : ?>
               <li>
                 <a href="?team_id=<?php echo $team['categoryID']; ?>">
-                    <?php echo $team['categoryName']; ?>
+                    <?php echo $team['teamName']; ?>
                 </a>
               </li>
             <?php endforeach; ?>
@@ -73,7 +73,7 @@ $statement3->closeCursor();
         </nav>
     </aside>
 <!-- display a table of players -->
-        <h2 id="categoryName"><?php echo $team_name; ?></h2>
+        <h2 id="teamName"><?php echo $team_name; ?></h2>
         <div id = "tablePosition">
 
 
@@ -87,16 +87,16 @@ $statement3->closeCursor();
 
             <?php foreach ($players as $player) : ?>
             <tr>
-                <td><?php echo $player['productCode']; ?></td>
-                <td><?php echo $player['productName']; ?></td>
-                <td><?php echo $player['listPrice']; ?></td>
+                <td><?php echo $player['playerJersey']; ?></td>
+                <td><?php echo $player['playerName']; ?></td>
+                <td><?php echo $player['playerPosition']; ?></td>
             </tr>
             <?php endforeach; ?>
         </table>
       </div>
 
         <div id="joinUs1">
-        <p id="joinUs3"><a href="test.html">View Leaderboard</a></p>
+        <p id="joinUs3"><a href="standing.php">View Leaderboard</a></p>
         </div>
 </main>
 <footer></footer>

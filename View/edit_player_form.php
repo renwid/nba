@@ -1,19 +1,19 @@
 <?php
 $product_id = $_POST['product_id'];
 
-//Get the teams for the pull down menu
+//Get the categories for the pull down menu
 require_once('../Model/database.php');
 $query = "SELECT*FROM categories ORDER BY categoryID";
 $categories = $db->query($query);
 
-$query = "SELECT*FROM products WHERE productID = $product_id";
+$query = "SELECT*FROM products WHERE playerID = $product_id";
 $edit_product = $db->query($query);
 $edit_product = $edit_product->fetch();
 
 //Define the VALUES
-$code = $edit_product['productCode'];
-$name = $edit_product['productName'];
-$price = $edit_product['listPrice'];
+$jersey = $edit_product['playerJersey'];
+$name = $edit_product['playerName'];
+$position = $edit_product['playerPosition'];
 $team_id = $edit_product['categoryID'];
 ?>
 
@@ -30,31 +30,31 @@ $team_id = $edit_product['categoryID'];
    </head>
    <body>
 
-         <h1>Edit Player</h1>
+         <h1>Edit Product</h1>
 
-         Player ID: <?php echo $product_id; ?><br />
-         #: <?php echo $code; ?>
+         Product ID: <?php echo $product_id; ?><br />
+         Code: <?php echo $jersey; ?>
 
 
          <form action="edit_player.php" method="post"
            id="edit_product_form">
            <input type="hidden" name="team_id" value="<?php echo $team_id; ?>">
-           <input type="hidden" name="code" value="<?php echo $code; ?>">
+           <input type="hidden" name="code" value="<?php echo $jersey; ?>">
            <input type="hidden" name="name" value="<?php echo $name; ?>">
-           <input type="hidden" name="price" value="<?php echo $price; ?>">
-           <input type="hidden" name="productID" value="<?php echo $product_id; ?>">
+           <input type="hidden" name="position" value="<?php echo $position; ?>">
+           <input type="hidden" name="playerID" value="<?php echo $product_id; ?>">
 
            <label>Team:</label>
            <select name="team_id">
            <?php foreach ($categories as $team) : ?>
              <option value="<?php echo $team['categoryID']; ?>">
-               <?php echo $team['categoryName']; ?>
+               <?php echo $team['teamName']; ?>
              </option>
            <?php endforeach; ?>
            </select><br>
 
-         <label>#:</label>
-         <input name="code" type="input" value="<?php echo $code; ?>"><br>
+         <label>Jersey:</label>
+         <input name="code" type="input" value="<?php echo $jersey; ?>"><br>
 
 
          <label>Name:</label>
@@ -62,7 +62,7 @@ $team_id = $edit_product['categoryID'];
 
 
          <label>Position:</label>
-         <input name="price" type="input" value="<?php echo $price; ?>"><br>
+         <input name="position" type="input" value="<?php echo $position; ?>"><br>
 
 
          <label>&nbsp;</label>

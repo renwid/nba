@@ -31,7 +31,7 @@ $statement->closeCursor();
             <select name="team_id">
             <?php foreach ($categories as $team) : ?>
                 <option value="<?php echo $team['categoryID']; ?>">
-                    <?php echo $team['categoryName']; ?>
+                  <?php echo $team['teamName']; ?>
                 </option>
             <?php endforeach; ?>
             </select><br>
@@ -43,7 +43,7 @@ $statement->closeCursor();
             <input type="text" name="name"><br>
 
             <label id="label3">Position:</label>
-            <input type="text" name="price"><br>
+            <input type="text" name="position"><br>
 
             <label>&nbsp;</label>
             <input id="addProduct3" type="submit" value="Add Player"><br>

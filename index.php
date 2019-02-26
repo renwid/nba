@@ -16,7 +16,7 @@ $statement1 = $db->prepare($queryTeam);
 $statement1->bindValue(':team_id', $team_id);
 $statement1->execute();
 $team = $statement1->fetch();
-$team_name = $team['categoryName'];
+$team_name = $team['teamName'];
 $statement1->closeCursor();
 
 // Get all teams
@@ -30,7 +30,7 @@ $statement->closeCursor();
 // Get products for selected team
 $queryProducts = 'SELECT * FROM products
                   WHERE categoryID = :team_id
-                  ORDER BY productID';
+                  ORDER BY playerID';
 $statement3 = $db->prepare($queryProducts);
 $statement3->bindValue(':team_id', $team_id);
 $statement3->execute();
@@ -58,15 +58,15 @@ $statement3->closeCursor();
         <h2>Teams</h2>
         <!-- If there is an error with selecting brands this code below is the reason why -->
         <nav>
-        <ul class="ulIndex">
-                <?php foreach ($categories as $team) : ?>
-            <li><a class="aManager" href=".?team_id=<?php echo $team['categoryID']; ?>">
-                    <?php echo $team['categoryName']; ?>
-                </a>
-            </li>
-            <?php endforeach; ?>
+          <ul class="ulIndex">
+              <?php foreach ($categories as $team) : ?>
+          <li><a id="aManager" href=".?team_id=<?php echo $team['categoryID']; ?>">
+                  <?php echo $team['teamName']; ?>
+              </a>
+          </li>
+          <?php endforeach; ?>
         </ul>
-        </nav>
+      </nav>
     </aside>
     <section>
         <!-- display a table of players -->
@@ -80,14 +80,14 @@ $statement3->closeCursor();
             </tr>
             <?php foreach ($players as $player) : ?>
             <tr>
-                <td><?php echo $player['productCode']; ?></td>
-                <td><?php echo $player['productName']; ?></td>
-                <td><?php echo $player['listPrice']; ?></td>
+              <td><?php echo $player['playerJersey']; ?></td>
+              <td><?php echo $player['playerName']; ?></td>
+              <td><?php echo $player['playerPosition']; ?></td>
 
                 <!-- Delete player -->
                 <td><form action="View/delete_player.php" method="post">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $player['productID']; ?>">
+                           value="<?php echo $player['playerID']; ?>">
                     <input type="hidden" name="team_id"
                            value="<?php echo $player['categoryID']; ?>">
                     <input id="editButton" type="submit" value="Delete">
@@ -96,7 +96,7 @@ $statement3->closeCursor();
                 <!-- Update player -->
                 <td><form action="View/edit_player_form.php" method="post" id="edit_product_form">
                     <input type="hidden" name="product_id"
-                           value="<?php echo $player['productID']; ?>">
+                           value="<?php echo $player['playerID']; ?>">
                     <input type="hidden" name="team_id"
                            value="<?php echo $player['categoryID']; ?>">
                     <input id="editButton" type="submit" value="Edit">
@@ -106,8 +106,10 @@ $statement3->closeCursor();
             <?php endforeach; ?>
         </table>
 
-          <p id="addProduct1"><a href="View/add_player_form.php">Add Players</a></p>
-          <p id="addProduct2"><a href="View/team_list.php">Add Team</a></p>
+        <p id="addProduct1"><a href="View/add_player_form.php">Add Players</a></p>
+        <p id="addProduct2"><a href="View/team_list.php">Add Team</a></p>
+        <p id="addProduct4"><a href="main.php">View Main</a></p>
+        <p id=""><a href="standing.php">View Standings</a></p>
 
     </section>
 </main>

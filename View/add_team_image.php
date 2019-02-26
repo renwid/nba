@@ -10,14 +10,22 @@ if ($team_id == null || $team_id == false) {
     require_once('../Model/database.php');
 
     // Add the product to the database
-    $query = 'DELETE FROM categories
-              WHERE categoryID = :team_id';
-    $statement = $db->prepare($query);
-    $statement->bindValue(':team_id', $team_id);
-    $statement->execute();
-    $statement->closeCursor();
+    $query = "INSERT INTO categories (image) VALUES ('$image')";
+
+    // execute query
+  	mysqli_query($db, $sql);
+
+  	if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
+  		$msg = "Image uploaded successfully";
+  	}else{
+  		$msg = "Failed to upload image";
+  	}
+  }
+  $result = mysqli_query($db, "SELECT * FROM images");
 
     // Display the Category List page
     include('team_list.php');
 }
+
+
 ?>

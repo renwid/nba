@@ -40,7 +40,6 @@ body {
     background-color: transparent;
     margin-top: 15.5em;
     margin-left: 4em;
-    position: fixed;
     text-decoration: none;
 }
 main {
@@ -232,11 +231,16 @@ br {
 
 #addProduct1
 {
-  margin-top: -2.5em;
+  margin-top: -4.5em;
   padding-bottom: 10px;
 }
 
 #addProduct2
+{
+  margin-bottom: 1.5em;
+}
+
+#addProduct4
 {
   margin-bottom: 1.5em;
 }
@@ -296,7 +300,7 @@ br {
 }
 
 #categoryListTable{
-  width: 18em;
+  width: 22em;
 }
 #deleteCategoryList{
   margin-left: 20px;
@@ -495,7 +499,7 @@ a:hover:after {
 
 #standingListTable
 {
-  width: 270px;
+  width: 290px;
 
 }
 
@@ -504,7 +508,7 @@ a:hover:after {
   margin-left: 10em;
 }
 #teamImage{
-  width: 26px;
+  width: 10px;
   height: 25px;
 }
 

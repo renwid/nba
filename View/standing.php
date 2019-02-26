@@ -15,7 +15,7 @@
 <!-- the head section -->
 <head>
     <title>NBA</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
 
 </head>
@@ -36,11 +36,13 @@
         <tr>
             <td><?php echo $team['categoryID']; ?></td>
             <td>
-              <?php echo $team['categoryName']; ?>
+              <?php echo $team['teamName']; ?>
             </td>
-            <td>
-              <?php echo '<img id="teamImage" src="data:image/jpeg;base64,'.base64_encode( $team['img'] ).'"/>'; ?>
-            </td>
+
+              <td>
+                <img id="teamImage" src="images/<?php echo $team['imgName']; ?>" style="width:29px">
+              </td>
+
         </tr>
         <?php endforeach; ?>
     </table>
