@@ -7,7 +7,6 @@
 
 > Enjoy :eyes:
 
-***Graphic***
 
 # NBA
 
@@ -55,6 +54,6 @@
 
 **GIF**
 
-![GIF](https://i.gyazo.com/bd03e9f31aa06a96786a2ede9a6e0aed.gif?_ga=2.262209861.854648317.1551051172-228063269.1547928545)
+![GIF](https://i.gyazo.com/becf287f8db0a0cabe5aa7dd955e904d.gif?_ga=2.234696856.745103909.1551221898-228063269.1547928545)
 
 ---
