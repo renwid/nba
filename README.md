@@ -18,7 +18,6 @@
 - I love the NBA
 - So many great players, so much excitement around the league
 - Games are pretty fun to watch :basketball:
-- Anyway, let's move on shall we?
 
 ---
 ## Table of Contents
