@@ -58,3 +58,19 @@
 
 ![GIF](https://i.gyazo.com/92527c80c4f23ae548580941c5593cb8.gif?_ga=2.193676142.2127822680.1551223246-228063269.1547928545)
 
+- **Is that all?**
+    - Ofcourse not, users can also add or delete a team and view standings! 
+
+---
+
+## Made By
+
+| <a href="http://www.google.com" target="_blank">**Renzo W**</a>
+| :---: |
+| [![renwid](https://i.imgur.com/8mkpIBh.jpg)](http://google.com)
+| <a href="http://github.com/renwid" target="_blank">`github.com/renwid`</a> |
+
+- With the help of :atom:
+- and ***google*** 
+
+---
