@@ -51,7 +51,6 @@ $statement3->closeCursor();
 
 <!-- the body section -->
 <body>
-<header><h1  id="indexManagerh1">Team Manager</h1></header>
 <main>
     <aside>
         <!-- display a list of categories -->
