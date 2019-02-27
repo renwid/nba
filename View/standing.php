@@ -79,6 +79,9 @@
         <?php endforeach; ?>
     </table>
 
+    <img src="../images/steph.png" id="steph" alt="Stephen Curry" style="width:15%">
+    <img src="../images/harden.png" id="harden" alt="James Harden" style="width:13%">
+    
     <p id="standingh1"><a href="../index.php">Back</a></p>
 
     <br>
