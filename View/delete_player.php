@@ -5,7 +5,7 @@ require_once('../Model/database.php');
 $player_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
 $team_id = filter_input(INPUT_POST, 'team_id', FILTER_VALIDATE_INT);
 
-// Delete the product from the database
+// Delete the player from the database
 if ($player_id != false && $team_id != false) {
     $query = 'DELETE FROM products
               WHERE playerID = :product_id';
@@ -15,5 +15,5 @@ if ($player_id != false && $team_id != false) {
     $statement->closeCursor();
 }
 
-// Display the Product List page
+// Display the Player List page
 include('../index.php');

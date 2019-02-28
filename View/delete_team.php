@@ -4,7 +4,7 @@ $team_id = filter_input(INPUT_POST, 'team_id', FILTER_VALIDATE_INT);
 
 // Validate inputs
 if ($team_id == null || $team_id == false) {
-    $error = "Invalid category ID.";
+    $error = "Invalid team ID.";
     include('../Error/error.php');
 } else {
     require_once('../Model/database.php');

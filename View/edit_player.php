@@ -7,7 +7,7 @@ $position = $_POST['position'];
 if(isset($_POST['playerID'])){ $player_id = $_POST['playerID']; }
 
 if(empty($jersey) || empty($name) || empty($position)){
-  $error = "Invalid product data.";
+  $error = "Invalid player data.";
   include('../Error/error.php');
 } else{
   require_once('../Model/database.php');

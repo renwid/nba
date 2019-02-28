@@ -1,10 +1,10 @@
 <?php
-// Get the player data
+// Get the product data
 $player_id = filter_input(INPUT_POST, 'product_id', FILTER_VALIDATE_INT);
 $team_id = filter_input(INPUT_POST, 'team_id', FILTER_VALIDATE_INT);
-$code = filter_input(INPUT_POST, 'code');
+$jersey = filter_input(INPUT_POST, 'code');
 $name = filter_input(INPUT_POST, 'name');
-$price = filter_input(INPUT_POST, 'position');
+$position = filter_input(INPUT_POST, 'position');
 
 // Validate inputs
 if ($team_id == null || $team_id == false ||
@@ -21,13 +21,13 @@ if ($team_id == null || $team_id == false ||
                  (:team_id, :code, :name, :position)';
     $statement = $db->prepare($query);
     $statement->bindValue(':team_id', $team_id);
-  $statement->bindValue(':code', $jersey);
-  $statement->bindValue(':name', $name);
-  $statement->bindValue(':position', $position);
+    $statement->bindValue(':code', $jersey);
+    $statement->bindValue(':name', $name);
+    $statement->bindValue(':position', $position);
     $statement->execute();
     $statement->closeCursor();
 
-    // Display the Player List page
+    // Display the Product List page
     include('../index.php');
 }
 ?>

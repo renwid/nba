@@ -47,16 +47,6 @@ if ($name == null) {
         echo "Sorry, there was a problem uploading your file.";
     }
 
-    // // Add the product to the database
-    // $query = 'INSERT INTO categories (teamName)
-    //           VALUES (:team_name)';
-
-    // $query = "INSERT INTO categories (image) VALUES ('$fileName', '$content')";
-
-    // $statement = $db->prepare($query);
-    // $statement->bindValue(':team_name', $name);
-    // $statement->execute();
-    // $statement->closeCursor();
 
 }
 ?>
