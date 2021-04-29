@@ -1,24 +1,3 @@
-
-# Welcome
-
-> Hi there, this is my NBA PHP website project
-
-> Below you will find more information about the website
-
-> Enjoy :eyes:
-
-
-# NBA
-
-[![NBA](https://i.imgur.com/1c3Bgzx.png)](height=1475)
-
-
-> So, why NBA?
-
-- I love basketball
-- So many great players and so much excitement around the league :basketball:
-
----
 ## Table of Contents
 
 > Click on one of the options:
@@ -90,9 +69,6 @@
 ![GIF](https://i.gyazo.com/e6cb5e59acc322184de98e07189b8c63.gif?_ga=2.264340428.2127822680.1551223246-228063269.1547928545)
 
 ![GIF](https://i.gyazo.com/92527c80c4f23ae548580941c5593cb8.gif?_ga=2.193676142.2127822680.1551223246-228063269.1547928545)
-
-- **Is that all?**
-    - Of course not, users can also add or delete a team and view the current standings!
 
 ---
 
